@@ -12,7 +12,7 @@ require('includes/connect_db.php');
 // Below was created out of error really, I learned a different way of setting up a DBC and this was PDO
 //Only did it the below way as I tried loads of times to get it to work. Realised i missed an apostrophe near the bottom when earlier the pre-learned method
 //didn't work
-$dbc = new PDO('mysql:host=localhost;dbname=b1004066_db1', $user='u261783350_liam9061' , $pass='OwLm@n009' );
+$dbc = new PDO('mysql:host=localhost;dbname=xxxxxxxxxx', $user='xxxxxxxxxxxx' , $pass='Oxxxxxxxxxxxxx' );
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Below has defined the variables to help with them showing later on
