@@ -10,7 +10,7 @@ include("includes/admin_header.html");
 require('includes/connect_db.php');
 
 
-$dbc = new PDO('mysql:host=localhost;u261783350_traderater', $user='u261783350_liam9061' , $pass='OwLm@n009' );
+$dbc = new PDO('mysql:host=localhost;xxxxxxxxxxxxxxx', $user='xxxxxxxxxxx' , $pass='xxxxxxxxxxxx' );
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // Select all from Trades and order them by tradeID
 $statement = $dbc->prepare('select * FROM trade ORDER BY tradeID ASC');
