@@ -1,0 +1,27 @@
+body {
+  background-color: #f3f3f3;
+  font-family: arial;
+}
+
+.Tradesman-container {
+  width: 900px;
+  background-color: #f3f3f3;
+  padding: 15px;
+}
+
+.search_box {
+  padding-bottom: 30px;
+  width: auto;
+}
+
+input {
+  padding: 0px 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 22;
+}
+button {
+  width: 100px;
+  height: 44px;
+  font-size: 22;
+}

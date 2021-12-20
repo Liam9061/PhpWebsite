@@ -1,0 +1,104 @@
+/*Below gives general formating for the nav bar across the top of the webpage*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* the below .logo tag is the the title in the top right */
+.logo {
+  color: rgb(218, 218, 218);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+/* top right helps me orgainse the navigation panel*/
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+/* Below has removed the bullet points from the nav bar as this is classed as a list in html. It will also hide burger on desktop*/
+.nav-links li {
+  list-style: none;
+}
+/* Below has helped style the navigation links */
+.nav-links a {
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.p {
+  color: rgb(218, 218, 218);
+}
+.h1 {
+  color: rgb(218, 218, 218);
+  font-size: 20px;
+  font-weight: bold;
+}
+.h2 {
+  color: rgb(218, 218, 218);
+  font-size: 12px;
+}
+
+/* hide burger on desktop as it looks ugly unless using smaller screen/windowed screen*/
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(218, 218, 218);
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+  /* Below is to aid with ease of access for browsers in windowed mode or tablets. the burger is now visible in windowed mode and on tablets */
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #5d4954;
+      display: Flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      transform: translate(100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+    }
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
