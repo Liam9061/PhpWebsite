@@ -1,6 +1,6 @@
 <?php
 //Again you see PDO - Again I tried the way learned and thought that was erroring however I found out an apostrophe was missing. As this worked I stuck with it
-$dbc = new PDO('mysql:host=localhost;dbname=b1004066_db1', $user='b1004066' , $pass='owlman09' );
+$dbc = new PDO('mysql:host=localhost;dbname=xxxxxx', $user='xxxxxxxx' , $pass='oxxxxxxxxxx' );
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $tradeID = $_POST['tradeID'] ?? null;
