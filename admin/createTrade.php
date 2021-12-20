@@ -9,7 +9,7 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
 include("includes/admin_header.html");
 require('includes/connect_db.php');
 // Again PDO used instead of MySQLI used. 
-$dbc = new PDO('mysql:host=localhost;dbname=u261783350_traderater', $user='u261783350_liam9061' , $pass='OwLm@n009' );
+$dbc = new PDO('mysql:host=localhost;dbname=xxxxxxxxxxxxxxxx', $user='xxxxxxxxxx' , $pass='xxxxxxxxx' );
 // When theres an error throw an exception
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
